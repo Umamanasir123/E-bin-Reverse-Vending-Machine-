@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #logo {
+        width: 10%;
+        height: 10%;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    #navbar {
+        width: 100%;
+        height: 15%;
+        position: fixed;
+        background-color: white;
+        margin-top: -1%;
+        z-index: 2;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+        font-size: 140%;
+        font-family: Bebas Neue, cursive;
+        padding: 6%;
+        letter-spacing: 1%;
+        margin-top: 2%;
+    }
+
+    #anc {
+        margin-left: 65%;
+        margin-top: -4%;
+    }
+
+    #unia {
+        margin-top: -3%;
+        width: 30%;
+    }
+
+    #aa {
+        margin-top: -3%;
+        margin-left: 85%;
+        width: 15%;
+    }
+
+    #ab {
+        margin-top: -2%;
+        margin-left: 30%;
+    }
+
+    .videodiv {
+        width: 100%;
+    }
+
+
+    #vidhead {
+        width: 90%;
+        height: 50%;
+        margin-top: -40%;
+        margin-left: 12%;
+
+    }
+
+    #vidhead h1 {
+        color: #7ebd4a;
+        font-size: 720%;
+        font-family: Bebas Neue, cursive;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+
+    #vidhead h2 {
+        color: white;
+        font-size: 520%;
+        font-family: Bebas Neue, cursive;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+
+    #butt button {
+        background-color: #7ebd4a;
+        width: 20%;
+        margin-top: -70%;
+        font-weight: bold;
+        border: none;
+        padding: 1.5%;
+        color: white;
+        font-size: 110%;
+        margin-left: 12%;
+        letter-spacing: 2px;
+    }
+
+    #butt {
+        margin-top: 5%;
+    }
+
+    #container {
+        width: 100%;
+        margin-top: 14%;
+    }
+
+
+    #picture {
+        margin-left: 56%;
+        margin-top: -43%;
+        width: 40%;
+        border: 2px solid black;
+        background-color: black;
+        box-shadow: 3px 4px 9px #91948f;
+    }
+
+    #details {
+        margin-left: 5%;
+        width: 40%;
+
+    }
+
+    #details h1,
+    p {
+        margin-left: 3%;
+
+    }
+
+    #heading {
+        font-size: 340%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        color: black;
+        border-left: 5px solid #7ebd4a;
+        padding-left: 3%;
+        text-align: justify;
+        word-spacing: 19px;
+
+    }
+
+    #detp {
+        word-wrap: break-word;
+        font-size: 154%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: justify;
+        color: black;
+
+    }
+
+
+    #p1 {
+        font-size: 370%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        color: black;
+        padding-left: 10%;
+        text-align: justify;
+    }
+
+    #prob {
+        margin-top: 10%;
+    }
+
+    #cont {
+        width: 95%;
+        height: 470px;
+        display: flex;
+        background-color: #ece7e7;
+        margin-left: 3%;
+        background-color: rgb(242, 242, 242);
+    }
+
+    #cover {
+
+        background-color: rgb(242, 242, 242);
+        opacity: 0.7;
+        z-index: 1;
+        height: 500px;
+    }
+
+    .box {
+        width: 630px;
+        height: 400px;
+        margin: 0.5%;
+        background-color: white;
+        transition: all 1s ease-in-out;
+        box-shadow: 2px 3px 4px black;
+    }
+
+    .box p {
+        color: black;
+        font-size: 115%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 6%;
+        margin-right: 9%;
+        margin-top: 4%;
+        width: 88%;
+        text-align: justify;
+        hyphens: auto;
+        word-spacing: 0.5px;
+        font-weight: bold;
+    }
+
+
+    .box h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #7ebd4a;
+        margin-left: 5%;
+        font-size: 160%;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    .box img {
+        margin-top: 7%;
+        margin-left: 37%;
+    }
+
+    #insight {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    #mobsc {
+        margin-left: 42%;
+        height: 460px;
+        width: 20%;
+        border-radius: 10%;
+    }
+
+    #mobsc:hover {
+        opacity: 0.7;
+        transform: scale(1.04);
+        transition: all 1s ease-in-out;
+    }
+
+    #head2 {
+        font-size: 370%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        color: black;
+        margin-left: 10%;
+        text-align: justify;
+    }
+
+    #para2 {
+        font-size: 164%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(86, 84, 84);
+        margin-left: 10%;
+        text-align: center;
+        width: 82%;
+    }
+
+    #head3 {
+        font-size: 370%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        color: black;
+        margin-left: 17%;
+    }
+
+    .mob {
+        margin-left: 10%;
+        width: 20%;
+    }
+
+    #item {
+        width: 100%;
+        margin-top: 7%;
+
+    }
+
+    .it {
+        text-transform: uppercase;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 1.2%;
+        width: 50%;
+
+    }
+
+    .it h1 {
+        text-align: center;
+        font-size: 160%;
+        font-weight: bold;
+    }
+
+    .it img {
+        margin-left: 28%;
+    }
+
+    #divv1 {
+        width: 80%;
+        margin-left: 8%;
+        display: flex;
+
+    }
+
+    #divv2 {
+        width: 80%;
+        margin-left: 8%;
+        display: flex;
+    }
+
+    #item5 {
+        margin-left: 3%;
+    }
+
+    #item6 {
+        margin-left: 5%;
+    }
+
+    .bot {
+        margin-left: 6%;
+    }
+
+    button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    button a:hover {
+        color: black;
+    }
+
+
+    #smh {
+        font-size: 320%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        color: black;
+        margin-left: 10%;
+        text-transform: uppercase;
+        margin-top: 8%;
+        text-align: justify;
+    }
+
+    #smh1 {
+        font-size: 320%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        color: black;
+        margin-left: 10%;
+        text-transform: uppercase;
+        margin-top: 8%;
+        text-align: justify;
+    }
+
+    #all {
+        margin-top: 2%;
+        width: 93%;
+        height: 2000px;
+
+    }
+
+
+
+
+    #fac {
+        margin-left: 30%;
+    }
+
+
+
+    .slick-next:before,
+    .slick-prev:before {
+        font-family: slick;
+        font-size: 25px;
+        line-height: 1;
+        opacity: .75;
+        color: black;
+        background-color: #ece7e7;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #display {
+        width: 80%;
+        /* height: 300px; */
+        margin-left: 10%;
+
+        box-shadow: 5px 5px 14px lightgray;
+        border-radius: 8%;
+    }
+
+    summary {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #7ebd4a;
+    }
+
+    .opt {
+        background-color: white;
+        box-shadow: 2px 2px 4px black;
+        width: 46%;
+        margin: 1%;
+        font-weight: bold;
+        border-top-left-radius: 6%;
+        border-bottom-right-radius: 6%;
+    }
+
+    #opt1 {
+        padding-left: 1.3%;
+    }
+
+    #opt2 {
+        padding-left: 2.3%;
+        padding-top: 1.3%;
+    }
+
+    #opt3 {
+        padding-left: 2.3%;
+        padding-top: 0.3%;
+    }
+
+    #opt1 p,
+    #opt2 p,
+    #opt3 p {
+
+        color: black;
+        width: 92%;
+        width: 88%;
+        text-align: justify;
+        hyphens: auto;
+        word-spacing: 0.5px;
+    }
+
+    #plus {
+        color: #7ebd4a;
+        width: 40%;
+        height: 89px;
+        font-size: 467%;
+
+        margin-left: 35%;
+    }
+
+    #user {
+        color: #7ebd4a;
+        width: 40%;
+        height: 50px;
+        font-size: 547%;
+        margin-left: 33%;
+        margin-top: -56%;
+    }
+
+    #dis {
+        margin-left: 33%;
+        margin-top: 4%;
+
+    }
+
+    #workflow {
+        width: 99.5%;
+        height: 780px;
+        background-color: #ece7e7;
+
+    }
+
+    #work {
+        padding-top: 2%;
+        padding-left: 2%;
+        width: 50%;
+        margin-left: 50%;
+        height: 730px;
+
+    }
+
+    #work a {
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+        color: black;
+        text-decoration: none;
+    }
+
+    #work a:hover {
+        text-decoration-line: underline;
+    }
+
+
+    .steps {
+        width: 45%;
+        height: 200px;
+        box-shadow: 5px 4px 6px lightgray;
+        padding: 7%;
+        text-align: center;
+        margin: 2%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: rgb(250, 250, 250);
+        margin-left: 0%;
+    }
+
+    #ff1 {
+        display: none;
+        margin-top: -57%;
+
+    }
+
+    #ff2 {
+        display: none;
+        margin-top: -57%;
+
+    }
+
+    #ff3 {
+        display: none;
+        margin-top: -57%;
+
+    }
+
+    #ff4 {
+        display: none;
+        margin-top: -57%;
+
+    }
+
+    #ff5 {
+        display: none;
+        margin-top: -57%;
+
+    }
+
+    #ff6 {
+        display: none;
+        margin-top: -57%;
+
+    }
+
+    #w2 {
+        margin-top: -33.5%;
+        margin-left: 49%;
+    }
+
+    #w22 {
+        margin-top: -28%;
+        margin-left: 49%;
+    }
+
+    #w44 {
+        margin-top: -27.8%;
+        margin-left: 49%;
+    }
+
+    #w11 {
+        margin-top: 4%;
+
+    }
+
+    #w33 {
+        margin-top: -2%;
+
+    }
+
+    #w3,
+    #w5 {
+        margin-top: 4%;
+    }
+
+    #w4 {
+        margin-top: -33.5%;
+        margin-left: 49%;
+
+    }
+
+    h5 {
+        color: #7ebd4a;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+
+    #w6 {
+        margin-top: -33.5%;
+        margin-left: 49%;
+
+    }
+
+    #flow {
+        margin-top: 7%;
+
+    }
+
+    #mi {
+        margin-top: -75%;
+        width: 41%;
+        margin-left: 6%;
+        height: 600px;
+        box-shadow: 6px 6px 10px black;
+        border-radius: 4%;
+    }
+
+
+
+
+    .stepdsc {
+
+        width: 50%;
+        height: 550px;
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 1%;
+        animation-name: example;
+        animation-duration: 2.4s;
+        animation-timing-function: cubic-bezier(0.22, 0, 0.58, 0.6);
+        transition: all 2.4s ease-in-out;
+
+    }
+
+    .contact i {
+        font-size: 24px;
+    }
+
+    @keyframes example {
+        from {
+            margin-left: -500px;
+        }
+
+        to {
+            transform: translateX(93px);
+        }
+    }
+
+
+    .stepdsc h3 {
+        margin-top: 4%;
+        color: #7ebd4a;
+    }
+
+    .stepdsc p {
+        width: 70%;
+        margin-left: 14%;
+        margin-top: 5%;
+        word-wrap: break-word;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 19px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: black;
+        font-weight: bold;
+    }
+
+    #imm1,
+    #imm2,
+    #imm3,
+    #imm4,
+    #imm5,
+    #imm6 {
+        width: 62%;
+        height: 350px;
+        margin-top: 3%;
+        box-shadow: 4px 4px 10px black;
+        opacity: 0.9;
+    }
+
+
+    #work1 {
+        box-sizing: border-box;
+        box-shadow: 3px 5px 8px lightgray;
+        margin: auto;
+        padding-top: 2%;
+        padding-left: 2%;
+        width: 70%;
+        height: 530px;
+        margin-top: -4%;
+    }
+
+    .steps1 {
+        width: 46%;
+        height: 200px;
+        box-shadow: 5px 4px 8px #7ebd4a;
+        padding: 7%;
+        text-align: center;
+        margin: 6%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: rgb(242, 252, 237);
+        margin-left: 0%;
+        border-radius: 7%;
+    }
+
+    .steps1 img {
+        animation: mymove 8s infinite;
+    }
+
+    @keyframes mymove {
+        50% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .round {
+        margin-top: -12%;
+        border-radius: 50%;
+
+    }
+
+    #smhh1 {
+        font-size: 320%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        color: black;
+        margin-left: 10%;
+        text-transform: uppercase;
+        margin-top: 8%;
+        text-align: justify;
+    }
+
+    #disbg {
+        width: 98.5%;
+        background-color: rgb(228, 220, 220);
+        margin-left: 1%;
+        padding: 2%;
+        border-radius: 1%;
+        display: none;
+    }
+
+    footer {
+        height: 250px;
+        width: 99.4%;
+        background-color: #7ebd4a;
+        color: white;
+        font-weight: bold;
+        margin-left: 3px;
+
+    }
+
+    .contact {
+        display: inline-block;
+        width: 500px;
+        height: 50px;
+    }
+
+    #footerdiv p {
+        padding: 3px;
+        color: white;
+    }
+
+    footer h3 {
+        margin-left: 43%;
+        color: white;
+
+    }
+
+
+    #fp1 {
+        margin-left: 15%;
+        margin-top: 7%;
+        word-wrap: break-word;
+        width: 110%;
+
+        font-size: 18px;
+
+    }
+
+    #fp1 p {
+        text-align: left;
+        margin-top: -6%;
+        margin-left: 5%;
+        word-spacing: 3px;
+        line-height: 34px;
+    }
+
+    #fp2 {
+        margin-left: 170%;
+        margin-top: -19%;
+        width: 60%;
+        font-size: 18px;
+
+    }
+
+    #fp3 {
+        margin-left: 170%;
+        margin-top: -2%;
+        font-size: 18px;
+        width: 60%;
+    }
+</style>
+
+<body>
+    <div id="navbar">
+        <nav>
+            <img id="logo" src="image/orglogo.png" alt="">
+            <div id="anc">
+                <a href="#workflow">HOW IT WORKS</a>
+                <a href="#footerdiv">CONTACT</a>
+            </div>
+            <div id="aa">
+                <a id="ab" href="image/manual.pdf" target="_blank"><img id="unia" src="image/manlogo.webp" alt=""></a>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="vid">
+        <video class="videodiv" autoplay muted loop playsinline>
+            <source src="image/ebinvid2.mp4" type=video/mp4>
+        </video>
+    </div>
+
+    <div id="vidhead">
+        <h1>E-BIN</h1>
+        <h2>REVERSE<br> VENDING<br>MACHINE</h2>
+    </div>
+
+    <div id="butt">
+        <button id="but"><a href="#details">FIND OUT MORE</a></button>
+    </div>
+
+    <div id="container">
+        <div id="details">
+            <p id="heading">REVOLUTIONIZING<br>THE WASTE<b><br>MANAGEMENT<br>SYSTEM</b></p>
+            <p id="detp">E-Bin is an AI-based smart waste bin, designed for public places, enabling them to simplify
+                recycling. It sorts and compresses the waste automatically, controls the fill level and processes all
+                the data for convenient waste management.</p>
+        </div>
+        <div id="picture">
+            <video width="530" height="540" autoplay muted loop playsinline>
+                <source src="image/rv.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+    <div id="viss">
+        <p id="smh1">OUR VISION FOR A <br><b>BETTER FUTURE</b></p><br><br>
+        <div id="work1">
+
+            <div id="w11" class="steps1">
+                <img class="round" src="image/red.png" alt="">
+                <h5>REDUCE PLASTIC WASTE</h5>
+            </div>
+            <div id="w22" class="steps1">
+                <img class="round" src="image/cl.png" alt="">
+                <h5>CLEANER ENVIRONMENT</h5>
+            </div>
+            <div id="w33" class="steps1">
+                <img class="round" src="image/do.png" alt="">
+                <h5>REVENUE OPPORTUNITY</h5>
+            </div>
+            <div id="w44" class="steps1">
+                <img class="round" src="image/recy.png" alt="">
+                <h5>RECYCLE PLASTIC</h5>
+            </div>
+        </div>
+
+
+        <div id="prob">
+            <p id="p1"><b>LET'S SORT OUT</b><br>YOUR WASTE PROBLEM</p>
+
+            <div id="cover">
+                <div id="cont" class="slider">
+                    <div class="box" id="box8">
+                        <img id="aut" src="image/aut2.png" alt="">
+                        <h1>E-BIN</h1>
+                        <p>A machine that will be capable of detecting plastic/metal and will shred it into relevant
+                            bin. Giving points on the bottle type and weight. Interactive display is attached for
+                            training.</p>
+                    </div>
+
+                    <div class="box" id="box1">
+                        <img src="image/bottle.png">
+                        <h1>AI-BASED RECOGNITION</h1>
+                        <p> Just throw the waste inside! E-Bin will use an AI-based recognition system to identify it,
+                            reaching a world leading accuracy of over 92%. </p>
+                    </div>
+
+                    <div class="box" id="box3">
+                        <img src="image/fill.png" alt="">
+                        <h1>FILL LEVEL CONTROL</h1>
+                        <p> Fill level sensors check whether the bin needs to be emptied. You will get an alert of your
+                            phone when the bins are full. </p>
+                    </div>
+
+                    <div class="box" id="box2">
+                        <img src="image/ppr.png" alt="">
+                        <h1>PLASTIC COMPRESSION</h1>
+                        <p>Plastic get compressed inorder to decrease the volume and lower the frequency of bin
+                            emptying. </p>
+                    </div>
+                    <div class="box" id="box6">
+                        <img src="image/fill.png" alt="">
+                        <h1>REDEEM VIA APP</h1>
+                        <p>Use your points to give back to those in need so that they can get benefit - your points your
+                            choice!!</p>
+                    </div>
+
+
+                    <div class="box" id="box4">
+                        <img src="image/real.png" alt="">
+                        <h1>REAL TIME DATA MANAGEMENT</h1>
+                        <p> All the data that E-Bin collects is transferred and processed on a cloud in real-time. </p>
+                    </div>
+                    <div class="box" id="box5">
+                        <img src="image/stat.png" alt="">
+                        <h1>APPS FOR STATS & REPORTS</h1>
+                        <p> Our app provides you detailed statistics about the waste you collected, data for optimizing
+                            waste collection and the technical status your devices. </p>
+                    </div>
+
+                    <div class="box" id="box7">
+                        <img src="image/stat.png" alt="">
+                        <h1>WORRY FREE</h1>
+                        <p>We manage the pickup and disposal processes with full responsibility and effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="insight">
+            <p id="head2">GET DETAILED INSIGHTS ON YOUR <br><b>SUSTAINABILITY PERFORMANCE</b></p>
+            <a href="#disbg" onclick="mobdetail()"><img id="mobsc" src="image/newmob.jpeg" alt=""></a>
+
+            <p id="para2">Our app provides information about the fill-level of your E-Bin devices and notifies you when
+                they
+                need to be emptied. It also gives you detailed statistics and reports about waste production, taking CSR
+                reporting to a whole new level</p>
+
+            <div id="disbg">
+                <div id="display">
+                    <div id="opt1" class="opt">
+                        <i id="plus" class="bi-bag-plus-fill"></i><br><br>
+                        <details>
+                            <summary><b>EARN POINTS AND GET DISCOUNT</b></summary>
+                            <p>Every time when you insert the bottle you will get the points which is shown in this
+                                option, and by collecting 100 points you will be able to get exciting discounts on the
+                                clothing brands and restaurants. </p>
+
+                        </details>
+                    </div>
+                    <div id="opt2" class="opt">
+                        <img id="dis" src="image/dolarsign.jpeg">
+                        <br><br>
+                        <details>
+                            <summary><b>DONATION/REDEEM POINTS</b></summary>
+                            <p>Use your points to give back to those in need so that thay can get benefit. Your points,
+                                your choice!</p>
+
+                        </details>
+                    </div>
+                    <div id="opt3" class="opt">
+                        <i id="user" class="bi-person-fill"></i>
+                        <details>
+                            <summary><b>VIEW PROFILE</b></summary>
+                            <p>From this option, you will be able to check that how many bottles you have inserted and
+                                the points you have so far collected and also you can access other details regarding
+                                your profile.</p>
+
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+
+
+    </div>
+
+
+    <div id="item">
+        <p id="smhh1"><b>functionality that deliver </b> <br>value to users</p>
+        <div id="divv1">
+
+            <div class="it">
+                <img src="image/item1.png" alt="">
+                <h1>Shredder</h1>
+            </div>
+            <div class="it" id="item2">
+                <img src="image/item2.png" alt="">
+                <h1>mobile app</h1>
+            </div>
+            <div class="it" id="item3">
+                <img src="image/item3.png" alt="">
+                <h1>fill level alerts</h1>
+            </div>
+        </div>
+        <div id="divv2">
+            <div class="it">
+                <img src="image/item4.png" alt="">
+                <h1>Easy to use</h1>
+            </div>
+            <div class="it" id="item5">
+                <img src="image/item5.png" alt="">
+                <h1>Weight and bottle detection</h1>
+            </div>
+            <div class="it" id="item6">
+                <img src="image/item6.png" alt="">
+                <h1>Attractive UI & lcd advertisement</h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="workflow">
+        <h1 id="smh">WORK FLOW</h1>
+        <div id="work">
+
+            <div id="w1" class="steps">
+                <a href="#ff1" onclick="show1()">STEP 1</a><br><br>
+                <h5>INSERT PLASTIC<BR> BOTTLE</h5>
+            </div>
+            <div id="w2" class="steps">
+                <a href="#ff2" onclick="show2()">STEP 2</a> <br><br>
+                <h5>ENTER CONTACT DETAILS</h5>
+            </div>
+            <div id="w3" class="steps">
+                <a href="#ff3" onclick="show3()">STEP 3</a><br><br>
+                <h5>AVAIL DISCOUNTS AND INCENTIVES</h5>
+            </div>
+            <div id="w4" class="steps">
+                <a href="#ff4" onclick="show4()">STEP 4</a><br><br>
+                <h5>USE DONATE OPTION</h5>
+            </div>
+            <div id="w5" class="steps">
+                <a href="#ff5" onclick="show5()">STEP 5</a><br><br>
+                <h5>RECEIVE ACKNOWLEDGEMENT</h5>
+            </div>
+            <div id="w6" class="steps">
+                <a href="#ff6" onclick="show6()">STEP 6</a><br><br>
+                <h5>REGISTER ON OUR APP</h5>
+            </div>
+        </div>
+
+        <div id="flow">
+            <img id="mi" src="image/1.1.jpg" alt="">
+            <div id="ff1" class="stepdsc">
+                <img src="image/s11.png" alt="" id="imm1">
+                <h3>INSERT PLASTIC BOTTLE</h3>
+                <p>Insert bottle into reverse vending machine and bottle cap into the repective area and wait for the
+                    bottle to be compressed then insert other bottles.</p>
+            </div>
+            <div id="ff2" class="stepdsc">
+                <img src="image/S2.png" alt="" id="imm2">
+                <h3>ENTER CONTACT DETAILS</h3>
+                <p>Proceed to keypad and enter your contact details.</p>
+            </div>
+            <div id="ff3" class="stepdsc">
+                <img src="image/S3.png" alt="" id="imm3">
+                <h3>AVAIL DISCOUNTS AND INCENTIVES</h3>
+                <p>Press * for incentive and enter your 11 digit phone number if you have mistakenly entered wrong
+                    number then again press * to clear the screen.</p>
+            </div>
+            <div id="ff4" class="stepdsc">
+                <img src="image/S4.png" alt="" id="imm4">
+                <h3>USE DONATE OPTION</h3>
+                <p>Press # to donate.</p>
+            </div>
+            <div id="ff5" class="stepdsc">
+                <img src="image/S5.png" alt="" id="imm5">
+                <h3>RECEIVE ACKNOWLEDGEMENT</h3>
+                <p>If you want to use the machine again wait for the thankyou message to disappear.</p>
+            </div>
+            <div id="ff6" class="stepdsc">
+                <img src="image/S6.png" alt="" id="imm6">
+
+                <h3>REGISTER YOURSELF ON OUR APP</h3>
+                <p>Register yourself in the system and install mobile application using QR code.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <div id="footerdiv">
+
+        <footer>
+            <h3>Contact Information</h3>
+            <div class="contact">
+                <div id="fp1"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>1st Floor Smart City Lab - HPCC Building NEDUET, Main University Road, Gulistan-e-Johar, Karachi
+                        (75270)-Sindh</p>
+                </div>
+
+                <div id="fp2">
+                    <p><i class="bi-mailbox"></i>&nbsp;&nbsp;smartcity@neduet.edu.pk</p>
+                </div>
+
+                <div id="fp3">
+                    <p><i class="bi-telephone-forward"></i>&nbsp;&nbsp;+92 335 3046110</p>
+                </div>
+            </div>
+            <hr style="width: 83%; margin-left:7%; border:2px solid white; margin-top: 2%;">
+            <p style="letter-spacing:1px; text-align: center;">copyright &copy; claim 2022. All rights reserved</p>
+        </footer>
+
+    </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+
+
+        });
+
+    </script>
+
+    <script>
+        function mobdetail() {
+            var a = document.getElementById("disbg");
+            var ad = document.getElementById("display");
+            var b = document.getElementById("mobsc");
+            if (a.style.display == "block") {
+                a.style.display = "none";
+            }
+            else {
+                a.style.display = "block";
+                ad.style.display = "flex";
+
+            }
+
+        }
+        function show1() {
+            var b = document.getElementById('ff2');
+            var c = document.getElementById('ff3');
+            var d = document.getElementById('ff4');
+            var e = document.getElementById('ff5');
+            var f = document.getElementById('ff6');
+            var g = document.getElementById('mi');
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+
+
+            var a = document.getElementById('ff1');
+            if (a.style.display == "block") {
+                a.style.display = "none";
+            }
+            else {
+                a.style.display = "block";
+            }
+        }
+        function show2() {
+            var b = document.getElementById('ff1');
+            var c = document.getElementById('ff3');
+            var d = document.getElementById('ff4');
+            var e = document.getElementById('ff5');
+            var f = document.getElementById('ff6');
+            var g = document.getElementById('mi');
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            var a = document.getElementById('ff2');
+            if (a.style.display == "block") {
+                a.style.display = "none";
+            }
+            else {
+                a.style.display = "block";
+
+            }
+        }
+        function show3() {
+
+            var b = document.getElementById('ff2');
+            var c = document.getElementById('ff1');
+            var d = document.getElementById('ff4');
+            var e = document.getElementById('ff5');
+            var f = document.getElementById('ff6');
+            var g = document.getElementById('mi');
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            var a = document.getElementById('ff3');
+            if (a.style.display == "block") {
+                a.style.display = "none";
+            }
+            else {
+                a.style.display = "block";
+            }
+        }
+        function show4() {
+            var b = document.getElementById('ff2');
+            var c = document.getElementById('ff3');
+            var d = document.getElementById('ff1');
+            var e = document.getElementById('ff5');
+            var f = document.getElementById('ff6');
+            var g = document.getElementById('mi');
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+
+
+            var a = document.getElementById('ff4');
+            if (a.style.display == "block") {
+                a.style.display = "none";
+            }
+            else {
+                a.style.display = "block";
+
+            }
+        }
+        function show5() {
+            var b = document.getElementById('ff2');
+            var c = document.getElementById('ff3');
+            var d = document.getElementById('ff4');
+            var e = document.getElementById('ff1');
+            var f = document.getElementById('ff6');
+            var g = document.getElementById('mi');
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            var a = document.getElementById('ff5');
+            if (a.style.display == "block") {
+                a.style.display = "none";
+            }
+            else {
+                a.style.display = "block";
+
+            }
+        }
+
+        function show6() {
+            var b = document.getElementById('ff2');
+            var c = document.getElementById('ff3');
+            var d = document.getElementById('ff4');
+            var e = document.getElementById('ff5');
+            var f = document.getElementById('ff1');
+            var g = document.getElementById('mi');
+
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            var a = document.getElementById('ff6');
+            if (a.style.display == "block") {
+                a.style.display = "none";
+            }
+            else {
+                a.style.display = "block";
+
+            }
+        }
+
+        // function moboff(){
+        //     var a=document.getElementById("display");
+        //     if(a.style.display=="block"){
+        //         a.style.display="none";
+        //     }
+        //     else{
+        //         a.style.display = "block";
+        //     }
+        // }
+
+    </script>
+
+
+
+
+</body>
+
+</html>
